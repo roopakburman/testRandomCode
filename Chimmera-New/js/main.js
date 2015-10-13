@@ -107,31 +107,31 @@ $(document).ready(function () {
   /* ========================================================================
     Grab Last Tweet
    ========================================================================== */
-  var config = {
-    "id": '585190259014639617',
-    "domId": 'tweets',
-    "maxTweets": 1, // defines how many tweet to show
-    "enableLinks": false,
-    "showUser": false,
-    "showTime": false,
-    "dateFunction": '',
-    "showRetweet": false,
-    "customCallback": handleTweets,
-    "showInteraction": false
-  };
-  function handleTweets(tweets){
-      var x = tweets.length;
-      var n = 0;
-      var element = document.getElementById('tweets');
-      var html = '<p>';
-      while(n < x) {
-        html +=  tweets[n];
-        n++;
-      }
-      html += '</p>';
-      element.innerHTML = html;
-  }
-  twitterFetcher.fetch(config);
+  // var config = {
+    // "id": '585190259014639617',
+    // "domId": 'tweets',
+    // "maxTweets": 1, // defines how many tweet to show
+    // "enableLinks": false,
+    // "showUser": false,
+    // "showTime": false,
+    // "dateFunction": '',
+    // "showRetweet": false,
+    // "customCallback": handleTweets,
+    // "showInteraction": false
+  // };
+  // function handleTweets(tweets){
+      // var x = tweets.length;
+      // var n = 0;
+      // var element = document.getElementById('tweets');
+      // var html = '<p>';
+      // while(n < x) {
+        // html +=  tweets[n];
+        // n++;
+      // }
+      // html += '</p>';
+      // element.innerHTML = html;
+  // }
+  // twitterFetcher.fetch(config);
 
 
   /* ========================================================================
