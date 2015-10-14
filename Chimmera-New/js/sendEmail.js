@@ -2,7 +2,7 @@ $('#sendBtn').click(function() {
 	var firstName = document.getElementById('first-name').value 
 	var lastName = document.getElementById('last-name').value 
 	var email = document.getElementById('email').value 
-	var projectName = document.getElementById('project-name').value 
+	var phone = document.getElementById('phone').value 
 	var description = document.getElementById('description').value 
 		$.ajax({
 	  type: "POST",
@@ -26,7 +26,7 @@ $('#sendBtn').click(function() {
 			],
 		  'autotext': 'true',
 		  'subject': 'Query from Chimmera.com',
-		  'html': '<p>Name: ' + firstName + ' ' + lastName + '</p> <p>Email: ' + email +'</p> <p>Project: ' + projectName +'</p> <p>Description: ' + description + '</p>'
+		  'html': '<p>Name: ' + firstName + ' ' + lastName + '</p> <p>Email: ' + email +'</p> <p>Project: ' + phone +'</p> <p>Description: ' + description + '</p>'
 		}
 	  }
 	 }).done(function(response) {
