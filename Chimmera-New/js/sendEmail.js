@@ -26,7 +26,7 @@ $('#sendBtn').click(function() {
 			],
 		  'autotext': 'true',
 		  'subject': 'Query from Chimmera.com',
-		  'html': '<p>Name: ' + firstName + ' ' + lastName + '</p> <p>Email: ' + email +'</p> <p>Project: ' + phone +'</p> <p>Description: ' + description + '</p>'
+		  'html': '<p>Name: ' + firstName + ' ' + lastName + '</p> <p>Email: ' + email +'</p> <p>Phone Number: ' + phone +'</p> <p>Description: ' + description + '</p>'
 		}
 	  }
 	 }).done(function(response) {
