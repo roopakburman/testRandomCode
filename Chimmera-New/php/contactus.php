@@ -41,10 +41,10 @@ if(isset($_POST['email'])) {
     $error_message .= 'The First Name you entered does not appear to be valid.<br />';
   }
   if(strlen($project_name) < 2) {
-    $error_message .= 'The message you entered do not appear to be valid.<br />';
+    $error_message .= 'The Project Name you entered do not appear to be valid.<br />';
   }
   if(strlen($message) < 2) {
-    $error_message .= 'The message you entered do not appear to be valid.<br />';
+    $error_message .= 'The requirements you entered do not appear to be valid.<br />';
   }
   if(strlen($error_message) > 0) {
     died($error_message);
@@ -59,8 +59,8 @@ if(isset($_POST['email'])) {
     $email_message .= "Name: ".clean_string($fname)."\n";
     $email_message .= "Name: ".clean_string($lname)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Email: ".clean_string($project_name)."\n";
-    $email_message .= "Message: ".clean_string($description)."\n";
+    $email_message .= "Project: ".clean_string($project_name)."\n";
+    $email_message .= "Message: ".clean_string($message)."\n";
      
      
 // create email headers
@@ -68,7 +68,7 @@ $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);  
- header('Location: ../../index.html#contact');
+ header('Location: index.html#contact');
 
 ?>
  
